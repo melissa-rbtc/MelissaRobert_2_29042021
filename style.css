@@ -4,6 +4,38 @@
     src: url("Raleway/Raleway-Medium.ttf");
     src: url("Raleway/Raleway-Regular.ttf");
 }
+
 body{
     font-family: Raleway, sans-serif, Georgia;
 }
+
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: auto;
+
+   
+}
+
+    #logoHeader{
+        height: auto;
+        width: 90px;
+        margin-right: auto;
+        padding-top: 20px;
+        align-self: flex-end;
+
+
+    }
+    .menuHeader{
+        display: flex;
+    }
+    nav ul{
+        display: flex;
+        list-style-type: none;
+    }
+
+    nav li{
+        margin-right: 20px;
+    }
