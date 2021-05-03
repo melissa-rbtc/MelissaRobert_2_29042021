@@ -1,3 +1,9 @@
-h1{
-    color: blue;
+@font-face {
+    font-family: "Raleway";
+    src: url("Raleway/Raleway-Bold.ttf");
+    src: url("Raleway/Raleway-Medium.ttf");
+    src: url("Raleway/Raleway-Regular.ttf");
+}
+body{
+    font-family: Raleway, sans-serif, Georgia;
 }
