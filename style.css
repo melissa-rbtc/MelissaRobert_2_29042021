@@ -1,4 +1,4 @@
-@font-face {
+@font-face { /* Style de police */
     font-family: "Raleway";
     src: url("Raleway/Raleway-Bold.ttf");
     src: url("Raleway/Raleway-Medium.ttf");
@@ -8,7 +8,7 @@
 body{
     font-family: Raleway, sans-serif, Georgia;
 }
-
+/*  ***     ***     *** Mise en place de la section Header***      ***     ***  */
 header{
     display: flex;
     flex-wrap: nowrap;
@@ -19,58 +19,103 @@ header{
    
 }
 
-    img{
+img{
         height: auto;
         width: 90px;
         margin-right: auto;
         padding-top: 20px;
         align-self: flex-end;
-
-    }
-
-    .menuheader{
-        display: flex;
-    }
-
-    nav ul{
-        display: flex;
-        list-style-type: none;
-    }
-
-    nav li{
-        margin-right: 20px;
-    }
-
-    nav a{
-        text-decoration: none;
-    }
-
-.fa-map-marker-alt{
-        background-color: #f2f2f2;
-        padding: 10px 10px 10px 10px;
-
-        
 }
 
-    input{
-        padding: 10px 10px 10px 10px;
-        border: solid 2px #f2f2f2;
-    }
+.menuheader{
+        display: flex;
+}
 
-    button{
+nav ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-end;
+}
+
+nav li{
+        margin-right: 20px;
+}
+
+nav a{
+        text-decoration: none;
+        color: black;
+}
+
+nav a:hover{
+        color: #0065FC;
+        border-top: 2px solid #0065FC;
+        font-weight: bold;
+}
+
+
+
+/*  ***     ***     *** Mise en page de la section recherche***     ***     ***  */
+
+.fa-map-marker-alt{
+        background-color: #F2F2F2;
+        padding: 10px 10px 10px 10px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        border: solid #F2F2F2 1px;
+        margin-right: -5px;
+}
+
+input{
+        padding: 10px 10px 10px 10px;
+        border: solid 1px #F2F2F2;
+    
+}
+
+
+::placeholder{
+       font-weight: bold;
+       color: black;
+}
+
+button{
         color: white;
-        background-color: blue;
+        background-color: #0065FC;
         font-weight: bold;
         padding: 10px 10px 10px 10px;
         font-size: 1em;
         border: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin: -5px;
 
-    }
+}
 
-.filtresearch{
+/*  ***     ***     *** Mise en place de la section filtres***      ***     ***   */
+.filtre{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     font-weight: bold;
+
+ 
+
+}
+
+
+.filtresearch{
+    flex-wrap: wrap;
+    font-weight: bold;
+    border: solid #F2F2F2;
+    margin-left: 40px;
     
+}
+
+.diffiltre{
+    padding: 12px;
+}
+
+.fa-money-bill-wave{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    padding: 12px;
+    border-radius: 50px;
 }
