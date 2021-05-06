@@ -7,6 +7,8 @@
 
 body{
     font-family: Raleway, sans-serif, Georgia;
+   
+
 }
 /*  ***     ***     *** Mise en place de la section Header***      ***     ***  */
 header{
@@ -19,7 +21,7 @@ header{
    
 }
 
-img{
+.logo{
         height: auto;
         width: 90px;
         margin-right: auto;
@@ -32,13 +34,14 @@ img{
 }
 
 nav ul{
-        display: flex;
+        display: inline-flex;
         list-style-type: none;
-        justify-content: flex-end;
+        text-align: center;
 }
 
 nav li{
         margin-right: 20px;
+      
 }
 
 nav a{
@@ -46,26 +49,34 @@ nav a{
         color: black;
 }
 
-nav a:hover{
+nav a:hover, .sinscrire:hover{
         color: #0065FC;
         border-top: 2px solid #0065FC;
-        font-weight: bold;
+        padding-top: 37px;
+ 
 }
 
+.sinscrire{
+      padding-top: 16px;
+      color: #0065FC;
+      font-weight: bold;
+
+
+}
 
 
 /*  ***     ***     *** Mise en page de la section recherche***     ***     ***  */
 
-.fa-map-marker-alt{
+.logoloca{
         background-color: #F2F2F2;
-        padding: 10px 10px 10px 10px;
+        padding: 9px 10px 12px 9px;
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
         border: solid #F2F2F2 1px;
         margin-right: -5px;
 }
 
-input{
+.localiser{
         padding: 10px 10px 10px 10px;
         border: solid 1px #F2F2F2;
     
@@ -75,14 +86,15 @@ input{
 ::placeholder{
        font-weight: bold;
        color: black;
+       font-size: 0.9em;
 }
 
 button{
         color: white;
         background-color: #0065FC;
         font-weight: bold;
-        padding: 10px 10px 10px 10px;
-        font-size: 1em;
+        padding: 12px 10px 10px 11px;
+        font-size: 0.8em;
         border: none;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -91,12 +103,10 @@ button{
 }
 
 /*  ***     ***     *** Mise en place de la section filtres***      ***     ***   */
-.filtre{
+.filtres{
     display: flex;
     align-items: center;
     font-weight: bold;
-
- 
 
 }
 
@@ -104,18 +114,70 @@ button{
 .filtresearch{
     flex-wrap: wrap;
     font-weight: bold;
-    border: solid #F2F2F2;
     margin-left: 40px;
-    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    line-height: 56px; /* Hauteur de ligne*/
 }
 
-span{
-    padding: 12px;
+.filtre{
+    padding: 10px;
+    border: solid 2px #F2F2F2;
+    border-radius: 23px;
+    padding-left: 49px;
+    position:relative;
+    right:44px;
 }
 
-.fa-money-bill-wave{
+.rond_bleu{
     background-color: #DEEBFF;
     color: #0065FC;
     padding: 12px;
     border-radius: 50px;
+    width:20px;
+    text-align:center;
+}
+
+.infosup{
+        display: flex;
+        margin:0px;
+        margin-bottom: 1.2em;
+}
+
+.cercle{
+        border: 1px solid #DEEBFF;
+        height: 1.5em;
+        width: 1.5em;
+        border-radius: 50%;
+        text-align: center;
+        vertical-align: top;
+        margin-right: 10px;
+}
+
+.Iinfo{
+        text-align: center;
+        vertical-align: middle;
+        font-size: 0.8em;
+}
+
+.lgtdispo{
+        padding-top: 5px;
+        margin-top: 15px;
+}
+
+/* Section principale */
+
+.principale{
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+}
+
+article{
+        display: flex;
+        justify-content: space-around;
+        background-color: #F2F2F2;
+        flex-wrap: wrap;
+        align-items: center;
 }
