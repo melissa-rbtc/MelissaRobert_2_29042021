@@ -11,7 +11,7 @@ body{
 /*  ***     ***     *** Mise en place de la section Header***      ***     ***  */
 header{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
     margin: auto;
@@ -109,7 +109,7 @@ button{
     
 }
 
-.diffiltre{
+span{
     padding: 12px;
 }
 
