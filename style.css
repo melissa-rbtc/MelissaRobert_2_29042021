@@ -1,12 +1,18 @@
-@font-face { /* Style de police */
+@font-face { /* Style de police normal*/
     font-family: "Raleway";
-    src: url("Raleway/Raleway-Bold.ttf");
-    src: url("Raleway/Raleway-Medium.ttf");
-    src: url("Raleway/Raleway-Regular.ttf");
+    src: url("Raleway/Raleway-Regular.ttf");    
+}
+@font-face {
+        font-family: "Ralewaybold";
+        src: url("Raleway/Raleway-Bold.ttf");        
+}
+@font-face {
+        font-family: "Ralewaymedium";
+        src: url("Raleway/Raleway-Medium.ttf");
 }
 
 body{
-    font-family: Raleway, sans-serif, Georgia;
+    font-family: "Ralewaymedium", sans-serif, Georgia;
     max-width: 1920px;
     min-width: 320px;
     margin: 10px;
@@ -36,9 +42,9 @@ header{
 }
 
 .choix{
-        display: flex;
+        
         justify-content: flex-end;
-        width: 30%;
+        width: 17%;
         padding-top: 20px;
        
 }
@@ -63,7 +69,7 @@ nav a{
 nav a:hover, .sinscrire:hover{
         color: #0065FC;
         border-top: 2px solid #0065FC;
-        padding-top: 20px;
+        padding-top: 44px;
  
 }
 
@@ -78,7 +84,17 @@ nav a:hover, .sinscrire:hover{
 
 
 /*  ***     ***     *** Mise en page de la section recherche***     ***     ***  */
+h1{
+        
+        
+        font-size: 1.2em;
+        font-weight: bold;
+}
 
+p{
+        font-size: 0.8em;
+        
+}
 .logoloca{
         background-color: #F2F2F2;
         padding: 9px 10px 12px 9px;
@@ -96,22 +112,27 @@ nav a:hover, .sinscrire:hover{
 
 
 ::placeholder{
+       
        font-weight: bold;
        color: black;
-       font-size: 0.9em;
+       font-size: 1em;
 }
 
-button{
+.rechercher{
         color: white;
         background-color: #0065FC;
         font-weight: bold;
         padding: 12px 10px 10px 11px;
-        font-size: 0.8em;
+        font-size: 0.9em;
         border: none;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         margin: -5px;
 
+}
+
+.recherloupe{
+        visibility: hidden;
 }
 
 /*  ***     ***     *** Mise en place de la section filtres***      ***     ***   */
@@ -234,6 +255,7 @@ article{
         margin-bottom: 8px;
         margin-top: 12px;
         padding-left: 15px;
+
         
 }
 
@@ -252,6 +274,7 @@ article{
 .tarif{
         margin: 0px 0px 5px 0px;
         padding-left: 15px;
+        
 }
 
 .prix{
@@ -260,6 +283,7 @@ article{
 
 .etoilebleu{
         font-size: small;
+        color: #0065FC;
 }
 
 .etoilegrise{
@@ -317,12 +341,35 @@ aside{
             order: 2;
     }
 
+    /*  **      **      **      **Responsive pour la partie filtres**      **      **       */
+
     .filtresearch{
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             font-size: 0.8em;
             
+    }
+
+    .rechercher{
+            visibility: hidden;
+    }
+
+    .recherloupe{
+        visibility: visible;
+        color: white;
+        background-color: #0065FC;
+        font-weight: bold;        
+        font-size: 0.8em;
+        border: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-left: -90px;
+        padding: 11px 12px 11px 12px;
+    }
+
+    h1{
+
     }
 
 
