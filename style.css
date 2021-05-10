@@ -166,12 +166,13 @@ button{
         margin-top: 15px;
 }
 
-/* Section principale */
+/*              **      **      ** Section principale**         **      **       */
 
 .principale{
         display: flex;
         justify-content: space-between;
         height: auto;
+        width: 100%;
 }
 
 article{
@@ -180,4 +181,83 @@ article{
         background-color: #F2F2F2;
         flex-wrap: wrap;
         align-items: center;
+        width: 60%;
+        border-radius: 10px;
+}
+
+.hebergement{
+        width: 100%;
+}
+.casehotel{
+        height: auto;
+        width: 30%;
+        margin: 6px 6px 6px 6px;
+        padding: 3px 3px 3px 3px;
+        box-shadow: 3px 3px 8px #DEEBFF;
+        background-color: white;
+        border-radius: 10px;
+}
+
+.rectphoto{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        border-radius: 10px 10px 0px 0px;
+        height: 10em;
+
+}
+
+.photochambre{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        margin: 0px;
+
+}
+
+.nomhotel{
+        font-weight: bold;
+        margin-bottom: 8px;
+        margin-top: 12px;
+        padding-left: 15px;
+        
+}
+
+.prixetoile{
+        margin-top: 5px;
+        font-size: 0.9em;
+
+}
+
+.noteetoileheb{
+        margin: 0px;
+        padding-left: 15px;
+        padding-bottom: 4px;
+}
+
+.tarif{
+        margin: 0px 0px 5px 0px;
+        padding-left: 15px;
+}
+
+.prix{
+        font-weight: bold;
+}
+
+.etoilebleu{
+        font-size: small;
+}
+
+.etoilegrise{
+        font-size: small;
+        color: #DEEBFF;
+}
+
+aside{
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        width: 30%;
 }
