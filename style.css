@@ -7,59 +7,71 @@
 
 body{
     font-family: Raleway, sans-serif, Georgia;
+    max-width: 1920px;
+    min-width: 320px;
+    margin: 10px;
    
 
 }
 /*  ***     ***     *** Mise en place de la section Header***      ***     ***  */
 header{
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
     justify-content: space-between;
-    margin: auto;
+    
 
    
 }
 
 .logo{
         height: auto;
-        width: 90px;
+        width: 100px;
         margin-right: auto;
         padding-top: 20px;
         align-self: flex-end;
+        flex: 80%;
 }
 
-.menuheader{
+.logoheader{
+        flex: 50%;
+}
+
+.choix{
         display: flex;
+        justify-content: flex-end;
+        width: 30%;
+        padding-top: 20px;
+       
 }
-
+ 
 nav ul{
         display: inline-flex;
         list-style-type: none;
-        text-align: center;
+        
 }
 
 nav li{
-        margin-right: 20px;
-      
+        margin-right: 40px;
 }
 
 nav a{
-        text-decoration: none;
-        color: black;
+       text-decoration: none;
+       color: black;    
+
 }
+
 
 nav a:hover, .sinscrire:hover{
         color: #0065FC;
         border-top: 2px solid #0065FC;
-        padding-top: 37px;
+        padding-top: 20px;
  
 }
 
 .sinscrire{
-      padding-top: 16px;
+      padding-top: 36px;
       color: #0065FC;
       font-weight: bold;
+      margin-left: 5px;
 
 
 }
@@ -175,6 +187,8 @@ button{
         width: 100%;
 }
 
+/*              **      **      **Hébergement**         **              **      */
+
 article{
         display: flex;
         justify-content: space-around;
@@ -253,6 +267,8 @@ article{
         color: #DEEBFF;
 }
 
+/*              **              **Plus Populaire**      **              **      */
+
 aside{
         background-color: #F2F2F2;
         display: flex;
@@ -260,4 +276,54 @@ aside{
         align-items: center;
         border-radius: 20px;
         width: 30%;
+}
+
+/* Mise en place du responsive design avec media queries */
+
+@media screen and (max-width:750px)
+{
+    header{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+    }
+
+    .logoloca{
+            padding: 9px 15px 12px 15px;
+
+    }
+
+    .logo{
+            width: 30%;
+    }
+
+    .logoheader:nth-child(1){
+            width: 20%;
+            order: 1;
+
+    }
+    
+    .choix:nth-child(2){
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            order: 3;
+    }
+
+    .sinscrire:nth-child(3){
+            width: 20%;
+            text-align: center;
+            border-radius: 10px;
+            order: 2;
+    }
+
+    .filtresearch{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            font-size: 0.8em;
+            
+    }
+
+
 }
