@@ -44,7 +44,7 @@ header{
 .choix{
         
         justify-content: flex-end;
-        width: 17%;
+        width: 30%;
         padding-top: 20px;
        
 }
@@ -176,6 +176,7 @@ p{
         display: flex;
         margin:0px;
         margin-bottom: 1.2em;
+        
 }
 
 .cercle{
@@ -195,7 +196,7 @@ p{
 }
 
 .lgtdispo{
-        padding-top: 5px;
+        padding-top: 1px;
         margin-top: 15px;
 }
 
@@ -203,9 +204,10 @@ p{
 
 .principale{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         height: auto;
         width: 100%;
+        
 }
 
 /*              **      **      **Hébergement**         **              **      */
@@ -218,6 +220,12 @@ article{
         align-items: center;
         width: 60%;
         border-radius: 10px;
+        padding: 30px;
+}
+
+h2{
+        font-size: 1.1em;
+        font-weight: bold;
 }
 
 .hebergement{
@@ -249,13 +257,21 @@ article{
         margin: 0px;
 
 }
+.nomH{
+        text-decoration: none;
+        color: black;
+}
+
+.nuità{
+        text-decoration: none;
+        color: black;
+}
 
 .nomhotel{
         font-weight: bold;
         margin-bottom: 8px;
         margin-top: 12px;
-        padding-left: 15px;
-
+        padding-left: 15px;      
         
 }
 
@@ -269,6 +285,7 @@ article{
         margin: 0px;
         padding-left: 15px;
         padding-bottom: 4px;
+
 }
 
 .tarif{
@@ -302,7 +319,7 @@ aside{
         width: 30%;
 }
 
-/* Mise en place du responsive design avec media queries */
+/*      **      **      **Mise en place du responsive design avec media queries**       **      **       */
 
 @media screen and (max-width:750px)
 {
@@ -369,8 +386,29 @@ aside{
     }
 
     h1{
+            width: 100%;
 
     }
 
+/*      **      **      **      **Responsive sur la partie principale**         **      **      */
+    article{
+            width: auto;
+            height: auto;
+            background-color: white;
+            flex-direction: column;
+            justify-content: center;
+    }
 
+    .casehotel{
+            width: 70%;
+            
+    }
+
+    .hebergement{
+            width: 100%;
+            font-size: 1.3em;
+   
+    }
+
+    
 }
