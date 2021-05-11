@@ -13,9 +13,11 @@
 
 body{
     font-family: "Ralewaymedium", sans-serif, Georgia;
-    max-width: 1920px;
-    min-width: 320px;
-    margin: 10px;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
    
 
 }
@@ -202,7 +204,7 @@ p{
 
 /*              **      **      ** Section principale**         **      **       */
 
-.principale{
+.principal{
         display: flex;
         justify-content: space-around;
         height: auto;
@@ -218,14 +220,16 @@ article{
         background-color: #F2F2F2;
         flex-wrap: wrap;
         align-items: center;
-        width: 60%;
-        border-radius: 10px;
-        padding: 30px;
+        width: 65%;
+        border-radius: 20px;
+        padding: 20px;
+        
 }
 
 h2{
         font-size: 1.1em;
         font-weight: bold;
+        width: 95%;
 }
 
 .hebergement{
@@ -236,7 +240,7 @@ h2{
         width: 30%;
         margin: 6px 6px 6px 6px;
         padding: 3px 3px 3px 3px;
-        box-shadow: 3px 3px 8px #DEEBFF;
+        box-shadow: 3px 3px 8px 3px #DEEBFF;
         background-color: white;
         border-radius: 10px;
 }
@@ -255,6 +259,8 @@ h2{
         width: 100%;
         border-radius: 10px 10px 0px 0px;
         margin: 0px;
+        object-fit: cover;
+        object-position: center;
 
 }
 .nomH{
@@ -284,8 +290,12 @@ h2{
 .noteetoileheb{
         margin: 0px;
         padding-left: 15px;
-        padding-bottom: 4px;
+        padding-bottom: 4px;        
 
+}
+
+.noteetoileheb a{
+        text-decoration: none;
 }
 
 .tarif{
@@ -316,7 +326,79 @@ aside{
         flex-direction: column;
         align-items: center;
         border-radius: 20px;
-        width: 30%;
+        width: 35%;
+}
+
+.titrepopu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+}
+
+.populaire{
+        width: 80%;
+}
+
+.fleche{
+        color: black;
+        font-size: large;
+}
+
+aside .casehotel{
+        display: flex;
+        width: 80%;
+        border-radius: 20px;
+        box-shadow: 3px 3px 8px 3px #DEEBFF;
+        margin: 10px;
+        height: 9.9em;
+}
+
+aside .rectphoto{
+        width: 35%;
+        height: 96%;
+        margin: 0px 10px 0px 0px;
+        padding: 3px;
+        border-radius: 20px 0px 0px 20px;
+}
+
+aside .photochambre{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px 0px 0px 20px;
+        object-fit: cover;
+        object-position: center;
+}
+
+.écrit{
+        
+        width: 180px;
+}
+
+aside .nomhotel{
+        margin: 0.5em 0em 0.3em 0.2em;
+        padding-top: 5px;
+        font-family: "Ralewaymedium";
+}
+
+aside .tarif{
+        margin: 0em 0em 0em 0.2em;
+
+}
+
+aside .etoilebleu .etoilegrise{
+        margin: 4em 0em 0em 0.2em;
+}
+
+.noteetoilepopu{
+        margin: 0px;
+        padding-left: 17px;
+        padding-top: 70px;
+}
+
+.afficherplus{
+        font-family: "Ralewaymedium";
+        width: 95%;
 }
 
 /*      **      **      **Mise en place du responsive design avec media queries**       **      **       */
@@ -349,8 +431,19 @@ aside{
             display: flex;
             justify-content: space-around;
             order: 3;
+            
+        }
+        
+    .choix:nth-child(2) ul{
+            padding-inline-start: 0;
+            width:100%;
     }
 
+    .choix:nth-child(2) li{
+            margin: auto;
+            width:50%;
+            text-align: center;
+    }
     .sinscrire:nth-child(3){
             width: 20%;
             text-align: center;
@@ -359,6 +452,9 @@ aside{
     }
 
     /*  **      **      **      **Responsive pour la partie filtres**      **      **       */
+    .filtres{
+            flex-direction: column;
+    }
 
     .filtresearch{
             display: flex;
