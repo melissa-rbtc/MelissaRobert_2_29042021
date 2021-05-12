@@ -207,7 +207,7 @@ p{
 .principal{
         display: flex;
         justify-content: space-around;
-        height: auto;
+        height: 100%;
         width: 100%;
         
 }
@@ -220,7 +220,7 @@ article{
         background-color: #F2F2F2;
         flex-wrap: wrap;
         align-items: center;
-        width: 65%;
+        width: 60%;
         border-radius: 20px;
         padding: 20px;
         
@@ -326,13 +326,13 @@ aside{
         flex-direction: column;
         align-items: center;
         border-radius: 20px;
-        width: 35%;
+        width: 30%;
 }
 
 .titrepopu{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: baseline;
         width: 80%;
 }
 
@@ -394,10 +394,15 @@ aside .etoilebleu .etoilegrise{
         margin: 0px;
         padding-left: 17px;
         padding-top: 70px;
+        
+}
+
+.noteetoilepopu a{
+        text-decoration: none;
 }
 
 .afficherplus{
-        font-family: "Ralewaymedium";
+        font-family: "Ralewaybold";
         width: 95%;
 }
 
@@ -405,6 +410,14 @@ aside .etoilebleu .etoilegrise{
 
 @media screen and (max-width:750px)
 {
+    body{
+            
+            margin: 0%;
+            padding: 1px;
+            
+            
+    }
+
     header{
             display: flex;
             flex-wrap: wrap;
@@ -418,6 +431,7 @@ aside .etoilebleu .etoilegrise{
 
     .logo{
             width: 30%;
+            margin-left: 8%;
     }
 
     .logoheader:nth-child(1){
@@ -425,49 +439,91 @@ aside .etoilebleu .etoilegrise{
             order: 1;
 
     }
-    
+
+    .sinscrire:nth-child(3){
+            width: 20%;
+            text-align: center;
+            text-decoration: none;
+            margin-right: 4%;
+            order: 2;
+    }
+
+
+/*      **      **      **Responsive Nav Choix**        **      **      */
+
     .choix:nth-child(2){
             width: 100%;
             display: flex;
             justify-content: space-around;
             order: 3;
+            line-height: 40px;
             
         }
         
     .choix:nth-child(2) ul{
             padding-inline-start: 0;
             width:100%;
+            
     }
 
     .choix:nth-child(2) li{
             margin: auto;
             width:50%;
             text-align: center;
-    }
-    .sinscrire:nth-child(3){
-            width: 20%;
-            text-align: center;
-            border-radius: 10px;
-            order: 2;
-    }
-
-    /*  **      **      **      **Responsive pour la partie filtres**      **      **       */
-    .filtres{
-            flex-direction: column;
-    }
-
-    .filtresearch{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            font-size: 0.8em;
+            border-bottom: 2px solid #F2F2F2;
             
     }
+
+    .choix:nth-child(2) li:hover{
+            border: none;
+            color: #0065FC;
+            border-bottom: 2px solid #0065FC;
+            
+    }
+
+    nav a:hover{
+            border-top: none;
+        }
+        
+/*           **      **      **      **Responsive partie search**    **      **      **      */
+
+        H1{
+                text-align: justify;
+                font-size: 1.4em;
+        }
+    
+        p{
+                font-size: 1em;
+                margin-bottom: 25px;
+        }
+
+    .searchecrit{
+            margin-left: 6%;
+            width: 80%;            
+        
+    }
+    
+    .formsearch{
+            
+            margin-left: 6%;
+            width: 100%;
+            justify-content: center;
+            font-size: 1em;
+                                
+            
+    }
+
+    input{
+            font-size: 1em;
+    }
+
+
 
     .rechercher{
             visibility: hidden;
     }
 
+    
     .recherloupe{
         visibility: visible;
         color: white;
@@ -475,36 +531,88 @@ aside .etoilebleu .etoilegrise{
         font-weight: bold;        
         font-size: 0.8em;
         border: none;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        margin-left: -90px;
-        padding: 11px 12px 11px 12px;
+        border-radius: 10px;
+        margin-left: -27%; 
+        padding: 12px 14px 12px 14px;
     }
 
-    h1{
-            width: 100%;
 
+
+        /*  **      **      **      **Responsive pour la partie filtres**      **      **       */
+    
+        H4{
+                font-size: 1.2em;
+                text-decoration: underline;
+                
+
+                
+                
+                
+        }
+
+    .filtres{
+            
+            flex-direction: column;
+            
+            margin-left: 6%;
+            margin-right: 10%;
     }
 
-/*      **      **      **      **Responsive sur la partie principale**         **      **      */
-    article{
+    .filtresearch{
+            display: flex;                   
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-size: 1.1em;
+            margin: 0%;          
+                  
+    }
+
+    .money, .famille{
+            margin-right: -6%;
+    }
+
+
+
+
+    
+
+  
+
+
+    
+/*      **      **      **      **Responsive sur la partie principal**         **      **      */
+        .principal{
+                flex-direction: column-reverse;
+                padding: 0px;
+                width: auto;
+        }
+
+        article{
             width: auto;
             height: auto;
             background-color: white;
-            flex-direction: column;
             justify-content: center;
-    }
+        }
 
     .casehotel{
-            width: 70%;
+            width: 100%;
             
-    }
+        }
 
     .hebergement{
             width: 100%;
             font-size: 1.3em;
    
-    }
+        }
+
+        aside{
+                width: auto;
+                height: auto;
+                background-color: #F2F2F2;
+                justify-content: center;
+                
+        }
+
 
     
 }
