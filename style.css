@@ -195,6 +195,8 @@ p{
         text-align: center;
         vertical-align: middle;
         font-size: 0.8em;
+        color: #0065FC;
+        
 }
 
 .lgtdispo{
@@ -216,13 +218,14 @@ p{
 
 article{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         background-color: #F2F2F2;
         flex-wrap: wrap;
         align-items: center;
         width: 60%;
         border-radius: 20px;
         padding: 20px;
+        margin-right: 40px;
         
 }
 
@@ -326,7 +329,8 @@ aside{
         flex-direction: column;
         align-items: center;
         border-radius: 20px;
-        width: 30%;
+        width: calc(40% - 40px)
+
 }
 
 .titrepopu{
@@ -334,10 +338,12 @@ aside{
         justify-content: space-between;
         align-items: baseline;
         width: 80%;
+        
 }
 
 .populaire{
         width: 80%;
+        
 }
 
 .fleche{
@@ -390,14 +396,21 @@ aside .etoilebleu .etoilegrise{
         margin: 4em 0em 0em 0.2em;
 }
 
-.noteetoilepopu{
-        margin: 0px;
-        padding-left: 17px;
-        padding-top: 70px;
+.noteetoilepopu{       
+        position: relative;
+        left: 16px;
+        top: 60px;
         
 }
 
-.noteetoilepopu a{
+.noteetoilepopu1{
+        position: relative;
+        left: 16px;
+        top: 75px;
+
+}
+
+.noteetoilepopu a, .noteetoilepopu1 a{
         text-decoration: none;
 }
 
@@ -408,7 +421,7 @@ aside .etoilebleu .etoilegrise{
 
 /*      **      **      **Mise en place du responsive design avec media queries**       **      **       */
 
-@media screen and (max-width:750px)
+@media screen and (max-width:1024px)
 {
     body{
             
@@ -488,8 +501,7 @@ aside .etoilebleu .etoilegrise{
 /*           **      **      **      **Responsive partie search**    **      **      **      */
 
         H1{
-                text-align: justify;
-                font-size: 1.4em;
+                font-size: 1.3em;
         }
     
         p{
@@ -541,19 +553,14 @@ aside .etoilebleu .etoilegrise{
         /*  **      **      **      **Responsive pour la partie filtres**      **      **       */
     
         H4{
-                font-size: 1.2em;
-                text-decoration: underline;
-                
-
-                
-                
-                
+                font-size: 1.2em;                               
+        
         }
 
     .filtres{
             
             flex-direction: column;
-            
+            align-items: initial;
             margin-left: 6%;
             margin-right: 10%;
     }
@@ -571,6 +578,10 @@ aside .etoilebleu .etoilegrise{
             margin-right: -6%;
     }
 
+    .infosup{
+            margin-left: 6%;
+    }
+
 
 
 
@@ -581,12 +592,31 @@ aside .etoilebleu .etoilegrise{
 
     
 /*      **      **      **      **Responsive sur la partie principal**         **      **      */
+        
         .principal{
                 flex-direction: column-reverse;
                 padding: 0px;
                 width: auto;
         }
 
+        
+        aside{
+                width: auto;
+                height: auto;
+                background-color: #F2F2F2;
+                justify-content: center;
+                border-radius: 0;
+                
+        }
+        
+        .noteetoilepopu, .noteetoilepopu1{       
+                position: relative;
+                left: 16px;
+                top: 35px;
+                
+                
+        }
+        
         article{
             width: auto;
             height: auto;
@@ -604,14 +634,7 @@ aside .etoilebleu .etoilegrise{
             font-size: 1.3em;
    
         }
-
-        aside{
-                width: auto;
-                height: auto;
-                background-color: #F2F2F2;
-                justify-content: center;
-                
-        }
+        
 
 
     
