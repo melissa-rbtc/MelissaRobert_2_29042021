@@ -16,8 +16,8 @@
 					</div>
 				<nav class="choix">
 					<ul>
-						<li><a class="navheb" href="Hébergements">Hébergements</a></li>
-						<li><a class="navacti" href="Activités">Activités</a></li>
+						<li><a class="navheb" href="hebergement">Hébergements</a></li>
+						<li><a class="navacti" href="activity">Activités</a></li>
 					</ul>
 				</nav>
 				<a class="sinscrire" href="s'inscrire">S'inscrire</a>
@@ -30,7 +30,7 @@
 				<p>En plein centre ville ou en pleine nature</p>
 			</div>			
 				<div class="formsearch">
-					<form method="post" action="traitement.php">
+					<form method="dialog" action="#">
 						<i class="fas fa-map-marker-alt logoloca"></i>
 						<input class="localiser" type="text" name="rechercheville" placeholder="Marseille, France"/>
 						<button class="rechercher">Rechercher</button>
@@ -179,13 +179,37 @@
 					</div>
 				</div>
 			</aside>
+		</div>
 
 <!--					### Section Activity ###						-->
-			<section id="activity">
-				<h3>Activités à Marseille</h3>
+			<section class="activity">
+				<h2>Activités à Marseille</h2>
 				<div class="activites">
-					<div class="vieuxport">
-						<p class="cadrephoto"><img class="vue" src="images/activites/vieuxport.jpg" alt="Vieux Port"/></p>						
+					<div class="entier">
+						<p class="cadrelong"><a href="#" class="nomAct"><img class="vuelong" src="images/activites/4_small/vieuxport.jpg" alt="Vieux Port"/></a></p>
+						<p class="nomlieu"><a href="#" class="nomAct">Vieux Port</a></p>						
+					</div>
+					<div class="demi">
+						<div class="moyencadre">
+							<p class="fort"><a href="#" class="nomAct"><img class="grosimg" src="images/activites/4_small/pomegues.jpg" alt="Fort de Pomègues"/></a></p>
+							<p class="nomlieu"><a href="#" class="nomAct">Fort de Pomègues</a></p></div>							
+						<div class="petitcadre">
+							<p class="frioul"><a href="#" class="nomAct"><img class="petitimg" src="images/activites/4_small/frioul.jpg" alt="Iles du Frioul"/></a></p>
+							<p class="nomlieu"><a href="#" class="nomAct">Iles du Frioul</a></p></div>
+					</div>
+					<div class="entier">
+						<p class="cadrelong"><a href="#" class="nomAct"><img class="vuelong" src="images/activites/4_small/calanques.jpg" alt="Parc National des Calanques"/></p>
+						<p class="nomlieu"><a href="#" class="nomAct">Parc National des Calanques</a></p>												
+					</div>
+					<div class="demi">
+						<div class="moitie">
+							<p class="demicadre"><a href="#" class="nomAct"><img class="demiimg" src="images/activites/4_small/notredame.jpg" alt="Notre-Dame-de-la-Garde"/></a></p>
+							<p class="nomlieu"><a href="#" class="nomAct">Notre-Dame-de-la-Garde</a></p>
+						</div>
+						<div class="moitie">
+							<p class="demicadre"><a href="#" class="nomAct"><img class="demiimg" src="images/activites/4_small/longchamp.jpg" alt="Parc Longchamp"/></a></p>
+							<p class="nomlieu"><a href="#" class="nomAct">Parc Longchamp</a></p>
+						</div>
 					</div>
 				</div>
 

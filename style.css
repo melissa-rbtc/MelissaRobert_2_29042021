@@ -43,12 +43,8 @@ header{
         flex: 50%;
 }
 
-.choix{
-        
-        justify-content: flex-end;
-        width: 30%;
-        padding-top: 20px;
-       
+.choix{     
+        padding-top: 20px;       
 }
  
 nav ul{
@@ -71,7 +67,7 @@ nav a{
 nav a:hover, .sinscrire:hover{
         color: #0065FC;
         border-top: 2px solid #0065FC;
-        padding-top: 44px;
+        padding-top: 34px;
  
 }
 
@@ -230,7 +226,7 @@ article{
 }
 
 h2{
-        font-size: 1.1em;
+        font-size: 1.2em;
         font-weight: bold;
         width: 95%;
 }
@@ -294,7 +290,7 @@ h2{
         margin: 0px;
         padding-left: 15px;
         padding-bottom: 4px;        
-
+        
 }
 
 .noteetoileheb a{
@@ -321,6 +317,13 @@ h2{
         color: #DEEBFF;
 }
 
+.afficherplus{
+        font-family: "Ralewaybold";
+        width: 95%;
+        height: 0px;
+}
+
+
 /*              **              **Plus Populaire**      **              **      */
 
 aside{
@@ -329,7 +332,8 @@ aside{
         flex-direction: column;
         align-items: center;
         border-radius: 20px;
-        width: calc(40% - 40px)
+        width: calc(40% - 40px);
+        
 
 }
 
@@ -340,6 +344,7 @@ aside{
         width: 80%;
         
 }
+
 
 .populaire{
         width: 80%;
@@ -414,9 +419,131 @@ aside .etoilebleu .etoilegrise{
         text-decoration: none;
 }
 
-.afficherplus{
+
+/*      **      **      **      **      **Partie Activités**    **      **      **      **      ***/
+
+.activites{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 60px;
+                
+}
+
+.activity h2{
+        font-size: 1.3em;
+        margin-top: 50px;
+}
+
+
+
+.entier{
+        height: 400px;
+        width: 23%;
+        padding: 0px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 8px 3px #DEEBFF;
+        
+}
+
+.cadrelong{
+        height: 350px;
+        width: 100%;
+        margin: 0px;
+        border-radius: 20px 20px 0px 0px;
+}
+
+.vuelong{
+        width: 100%;
+        height: 350px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+        object-position: center;
+}
+
+.demi{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 23%;
+        
+}
+
+.moyencadre{
+        height: 200px;
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 3px 3px 8px 3px #DEEBFF;
+}
+
+.fort{
+        height: 160px;
+        width: 100%;
+        margin: 0px;
+        border-radius: 20px 20px 0px 0px;
+}
+
+.grosimg{
+        height: 100%;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+        object-position: center;
+}
+
+.petitcadre{
+        height: 150px;
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 3px 3px 8px 3px #DEEBFF;        
+}
+
+.frioul{
+        height: 100px;
+        width: 100%;
+        margin: 0px;
+        border-radius: 20px 20px 0px 0px;        
+}
+
+.petitimg{
+        height: 100%;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+        object-position: center;        
+}
+
+.moitie{
+        height: 190px;
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 3px 3px 8px 3px #DEEBFF;        
+}
+
+.demicadre{
+        height: 140px;
+        width: 100%;
+        margin: 0px;
+        border-radius: 20px 20px 0px 0px;
+}
+
+.demiimg{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+        object-position: center;
+}
+
+.nomlieu{
+        margin: 0px;
         font-family: "Ralewaybold";
-        width: 95%;
+        padding: 1em 0em 1em 1em;
+}
+
+.nomAct{
+        text-decoration: none;
+        color: black;
 }
 
 /*      **      **      **Mise en place du responsive design avec media queries**       **      **       */
@@ -635,7 +762,52 @@ aside .etoilebleu .etoilegrise{
    
         }
         
+/*      **      **      **      **Responsive pour la partie activités**         **      **      **      */
 
+        .activites{
+                display: flex;
+                
+                flex-wrap: wrap;
+                width: auto;
+                justify-content: space-around;
+                margin-bottom: 0px;
+                align-items: initial;
+                                
+        }
+
+        .activity h2{
+                width: auto;
+                
+        }
+
+        .entier{
+                height: 150px;
+                width: 90%;
+                margin-bottom: 10px;
+                
+
+        }
+
+
+        .cadrelong, .frioul, .fort, .demicadre{
+                height: 100px;
+                width: auto;
+        }
+
+        .demi{
+                width: 90%;
+               
+        }
+
+        .moitie, .petitcadre, .moyencadre{
+                width: 100%;
+                margin-bottom: 25px;                
+        }
+
+        
+        .vuelong{
+                height: 170px;
+        }
 
     
 }
