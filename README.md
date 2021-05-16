@@ -1,8 +1,7 @@
 # MelissaRobert_2_29042021
 https://melissa-rbtc.github.io/MelissaRobert_2_29042021/
-Objectif : Intégration maquette Reservia
 
-Bonjour ! 😀
+Objectif : Intégration maquette Reservia
 
 A l'aide des maquettes desktop et mobiles du site Reservia créer un site web. 
 
