@@ -93,6 +93,7 @@ p{
         font-size: 0.8em;
         
 }
+
 .logoloca{
         background-color: #F2F2F2;
         padding: 9px 10px 12px 9px;
@@ -111,9 +112,9 @@ p{
 
 ::placeholder{
        
-       font-weight: bold;
+       font-family: "Ralewaybold";
        color: black;
-       font-size: 1em;
+       font-size: 1.1em;
 }
 
 .rechercher{
@@ -150,6 +151,10 @@ p{
     flex-direction: row;
     width: 100%;
     line-height: 56px; /* Hauteur de ligne*/
+}
+
+.filtresearch:hover{
+        color: #0065FC;
 }
 
 .filtre{
