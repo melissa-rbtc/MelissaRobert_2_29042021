@@ -15,6 +15,7 @@ body{
     font-family: "Ralewaymedium", sans-serif, Georgia;
     width: auto;
     height: auto;
+    overflow-x: hidden;
     margin: auto;
     
     
@@ -23,8 +24,8 @@ body{
 header{
         display: flex;
         justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
     
 
    
@@ -77,6 +78,7 @@ nav a:hover, .sinscrire:hover{
       font-weight: bold;
       margin-left: 5px;
       border-top: 2px solid white;
+      text-decoration: none;
 
 
 }
@@ -85,8 +87,8 @@ nav a:hover, .sinscrire:hover{
 /*  ***     ***     *** Mise en page de la section recherche***     ***     ***  */
 
 #search{
-        padding-left: 20px;
-        padding-right: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
 }
 
 h1{
@@ -220,9 +222,8 @@ p{
         justify-content: space-around;
         height: 100%;
         width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin: auto;
+        margin-left: 20px;
+        
         
 }
 
@@ -349,6 +350,8 @@ aside{
         align-items: center;
         border-radius: 20px;
         width: calc(40% - 40px);
+        margin-right: 40px;
+        padding-bottom: 0px;
         
 
 }
@@ -357,14 +360,14 @@ aside{
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        width: 80%;
-        
+        width: 80%;        
 }
 
 
+
+
 .populaire{
-        width: 80%;
-        
+        width: 80%;                
 }
 
 .fleche{
@@ -438,6 +441,12 @@ aside .etoilebleu .etoilegrise{
 
 /*      **      **      **      **      **Partie Activités**    **      **      **      **      ***/
 
+.activity{
+        margin-left: 10px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+}
+
 .activites{
         display: flex;
         justify-content: space-between;
@@ -452,6 +461,7 @@ aside .etoilebleu .etoilegrise{
 .activity h2{
         font-size: 1.3em;
         margin-top: 50px;
+        margin-left: 20px;
 }
 
 
@@ -571,7 +581,7 @@ aside .etoilebleu .etoilegrise{
 footer{
         background-color: #F2F2F2;
         display: flex;
-        justify-content: space-between;
+        margin: auto;
         width: 100%;
 }
 
@@ -588,7 +598,8 @@ li{
 }
 
 .apropos, .nosheber, .assist{
-        width: 330px;
+        width: 33.33%;
+        
 }
 
 
@@ -599,8 +610,9 @@ li{
 @media screen and (max-width:1024px)
 {
     body{
-            
-            margin: 0%;
+            width: 100%;
+            height: 100%;
+            margin: 0px;
             padding: 1px;
             overflow-x: hidden;
             
