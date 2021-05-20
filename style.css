@@ -809,14 +809,21 @@ li{
                 border-radius: 0;
                 margin: 0;
         }
+
+        aside .titrepopu{
+                width: 100%;
+        }
+
+        aside .casehotel{
+                width: 100%;
+       
+        }
         
-        .noteetoilepopu, .noteetoilepopu1{       
+        .noteetoilepopu, .noteetoilepopu1{
                 position: relative;
                 left: 16px;
                 top: 35px;
-                
-                
-        }
+        } 
         
         article{
             width: auto;
