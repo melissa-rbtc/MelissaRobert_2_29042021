@@ -84,7 +84,7 @@ nav a:hover, .sinscrire:hover{
 
 /*  ***     ***     *** Mise en page de la section recherche***     ***     ***  */
 
-#search{
+.search{
         margin-left: 20px;
         margin-right: 20px;
 }
@@ -98,12 +98,13 @@ h1{
 
 p{
         font-size: 0.8em;
+        line-height: 20px;
         
 }
 
 .logoloca{
         background-color: #F2F2F2;
-        padding: 9px 10px 12px 9px;
+        padding: 12px 12px 12px 12px;
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
         border: solid #F2F2F2 1px;
@@ -123,6 +124,11 @@ p{
        color: black;
        font-size: 1.1em;
        
+}
+
+input{
+        font-size: 1em;
+        font-family: "Ralewaymedium";
 }
 
 .rechercher{
@@ -162,7 +168,7 @@ p{
     line-height: 56px; /* Hauteur de ligne*/
 }
 
-.filtresearch:hover{
+.filtresearch div:hover{
         color: #0065FC;
 }
 
@@ -606,7 +612,7 @@ li{
 
 /*      **      **      **Mise en place du responsive design avec media queries**       **      **       */
 
-@media screen and (max-width:1024px)
+@media screen and (max-width:1024px) 
 {
     body{
             width: 100%;
@@ -663,7 +669,7 @@ li{
 }
 
 .choix:nth-child(2) ul{
-        padding-inline-start: initial;
+        padding: 0;
         width:100%;
         
 }
@@ -687,12 +693,12 @@ li{
                 border-top: none;
         }
         
-        /*           **      **      **      **Responsive partie search**    **      **      **      */
+/*           **      **      **      **Responsive partie search**    **      **      **      */
         
-        .search{
+.search{
                 margin-right: 0;
                 margin-left: 0;
-        }
+}
 
         H1{
                 font-size: 1.3em;
@@ -913,6 +919,7 @@ li{
                 margin-top: 25px;
                 margin-right: 0px;
                 margin-left: 0px;
+                overflow-x: hidden;
         }
         
         .apropos, .nosheber, .assist{
